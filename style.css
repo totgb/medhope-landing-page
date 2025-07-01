@@ -374,6 +374,21 @@ body.dark-theme .hero p {
   opacity: 1;
 }
 
+.partner-strap-track img {
+  height: 2.2rem;
+  width: auto;
+  margin: 0 1.5rem;
+  object-fit: contain;
+  filter: grayscale(0.2) brightness(0.95);
+  transition: filter 0.2s, transform 0.2s;
+  vertical-align: middle;
+}
+
+.partner-strap-track img:hover {
+  filter: grayscale(0) brightness(1.1) drop-shadow(0 2px 8px #3a8dde22);
+  transform: scale(1.08);
+}
+
 @keyframes scroll-partners {
   0% {
     transform: translateX(0);
