@@ -334,3 +334,51 @@ body.dark-theme .hero h1 {
 body.dark-theme .hero p {
     color: #fff;
 }
+
+.partner-strap-section {
+  background: #f1f5f9;
+  padding: 0.5rem 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.partner-strap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.partner-strap-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-partners 40s linear infinite;
+  gap: 2.5rem;
+}
+
+.partner-strap-track span {
+  white-space: nowrap;
+  font-size: 1rem;
+  color: #2d3a4a;
+  font-weight: 500;
+  padding: 0 1rem;
+  opacity: 0.85;
+  transition: color 0.2s;
+}
+
+.partner-strap-track span:hover {
+  color: #3a8dde;
+  opacity: 1;
+}
+
+@keyframes scroll-partners {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
