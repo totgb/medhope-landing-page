@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedHope Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MedHope Foundation</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#torch">Our Torch</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#join">Join Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggleTop" class="theme-toggle" aria-label="Toggle theme">
+      <span id="themeIconTop">🌙</span>
+      </button>
+    </nav>
+    <section class="hero">
+      <h1>Bringing Hope, Changing Lives</h1>
+      <p>Together, we light the way for those in need.</p>
+      <button onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Join Us</button>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Us</h2>
+      <p>
+        MedHope Foundation is dedicated to providing medical aid, hope, and support to underserved communities. Our mission is to ensure everyone has access to quality healthcare and a brighter future.
+      </p>
+      <img src="assets/images/about.jpeg" alt="Helping hands" />
+    </section>
+
+    <section id="services" class="fade-in">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Medical Outreach Programs</li>
+        <li>Health Education</li>
+        <li>Emergency Relief</li>
+        <li>Community Support</li>
+      </ul>
+    </section>
+
+    <section id="torch" class="fade-in torch-section">
+      <h2>Our Torch</h2>
+      <p>
+        The torch symbolizes our unwavering commitment to bring light and hope to those in darkness. We carry this torch with compassion, integrity, and dedication.
+      </p>
+      <img src="assets/images/torch.jpeg" alt="Torch symbol" />
+    </section>
+
+    <section id="programs" class="fade-in">
+      <h2>Programs</h2>
+      <div class="programs-list">
+        <article>
+          <h3>Mobile Clinics</h3>
+          <p>Bringing healthcare directly to remote communities.</p>
+        </article>
+        <article>
+          <h3>Scholarships</h3>
+          <p>Supporting future healthcare professionals.</p>
+        </article>
+        <article>
+          <h3>Nutrition Drives</h3>
+          <p>Providing food and nutrition to families in need.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="fade-in">
+      <h2>Testimonials</h2>
+      <blockquote>
+        "MedHope Foundation saved my child's life. Their kindness and support gave us hope when we had none." 
+        <cite>- A grateful parent</cite>
+      </blockquote>
+      <blockquote>
+        "Thanks to MedHope, I can now pursue my dream of becoming a nurse." 
+        <cite>- Scholarship Recipient</cite>
+      </blockquote>
+    </section>
+
+    <section id="join" class="fade-in join-section">
+      <h2>Join Us</h2>
+      <p>Become a volunteer or supporter and help us make a difference!</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+    </section>
+
+    <section id="contact" class="fade-in contact-section">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MedHope Foundation. All rights reserved.</p>
+    <button id="themeToggleBottom" class="theme-toggle" aria-label="Toggle theme">
+      <span id="themeIconBottom">🌙</span>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
