@@ -1,0 +1,51 @@
+<svg width="1920" height="600" viewBox="0 0 1920 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="600" fill="#3a8dde"/>
+  <!-- Sun -->
+  <circle cx="1700" cy="100" r="60" fill="#ffe082"/>
+  <!-- Ground -->
+  <ellipse cx="960" cy="570" rx="900" ry="80" fill="#6ed7b5"/>
+  <!-- Group of children -->
+  <g>
+    <ellipse cx="400" cy="500" rx="40" ry="60" fill="#ffe0b2"/>
+    <ellipse cx="400" cy="470" rx="25" ry="25" fill="#fbc02d"/>
+    <ellipse cx="350" cy="520" rx="20" ry="30" fill="#ffe0b2"/>
+    <ellipse cx="350" cy="500" rx="15" ry="15" fill="#8d6e63"/>
+    <ellipse cx="450" cy="520" rx="20" ry="30" fill="#ffe0b2"/>
+    <ellipse cx="450" cy="500" rx="15" ry="15" fill="#4fc3f7"/>
+    <!-- Smiles -->
+    <path d="M390 480 Q400 490 410 480" stroke="#222" stroke-width="2" fill="none"/>
+    <path d="M340 510 Q350 520 360 510" stroke="#222" stroke-width="2" fill="none"/>
+    <path d="M440 510 Q450 520 460 510" stroke="#222" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Farmer with basket -->
+  <g>
+    <ellipse cx="700" cy="500" rx="35" ry="55" fill="#ffe0b2"/>
+    <ellipse cx="700" cy="470" rx="22" ry="22" fill="#a1887f"/>
+    <rect x="680" y="530" width="40" height="25" rx="10" fill="#8d6e63"/>
+    <ellipse cx="700" cy="555" rx="20" ry="8" fill="#ffe082"/>
+    <!-- Smile -->
+    <path d="M690 480 Q700 490 710 480" stroke="#222" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Aid worker giving food -->
+  <g>
+    <ellipse cx="1000" cy="500" rx="38" ry="60" fill="#ffe0b2"/>
+    <ellipse cx="1000" cy="470" rx="25" ry="25" fill="#90caf9"/>
+    <rect x="980" y="530" width="40" height="25" rx="10" fill="#fff"/>
+    <ellipse cx="1000" cy="555" rx="20" ry="8" fill="#ffe082"/>
+    <!-- Smile -->
+    <path d="M990 480 Q1000 490 1010 480" stroke="#222" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Food crowd -->
+  <g>
+    <ellipse cx="1400" cy="520" rx="30" ry="40" fill="#ffe0b2"/>
+    <ellipse cx="1435" cy="530" rx="25" ry="35" fill="#ffe0b2"/>
+    <ellipse cx="1370" cy="540" rx="20" ry="30" fill="#ffe0b2"/>
+    <ellipse cx="1400" cy="500" rx="15" ry="15" fill="#fbc02d"/>
+    <ellipse cx="1435" cy="510" rx="12" ry="12" fill="#8d6e63"/>
+    <ellipse cx="1370" cy="520" rx="10" ry="10" fill="#4fc3f7"/>
+    <!-- Smiles -->
+    <path d="M1390 510 Q1400 520 1410 510" stroke="#222" stroke-width="2" fill="none"/>
+    <path d="M1425 520 Q1435 530 1445 520" stroke="#222" stroke-width="2" fill="none"/>
+    <path d="M1360 530 Q1370 540 1380 530" stroke="#222" stroke-width="2" fill="none"/>
+  </g>
+</svg>

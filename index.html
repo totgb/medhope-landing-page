@@ -4,159 +4,297 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MedHope Foundation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">MedHope Foundation</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#torch">Our Torch</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#join">Join Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="themeToggleTop" class="theme-toggle" aria-label="Toggle theme">
-      <span id="themeIconTop">🌙</span>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">MedHope Foundation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </nav>
-    <section class="hero">
-      <h1>Bringing Hope, Changing Lives</h1>
-      <p>Together, we light the way for those in need.</p>
-      <button onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Join Us</button>
-    </section>
-  </header>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#torch">Our Torch</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggleTop" class="btn btn-outline-light ms-3" aria-label="Toggle theme">
+          <span id="themeIconTop">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center min-vh-100 position-relative" id="hero">
+    <img src="assets/images/ngo_alliance.png" alt="MedHope Foundation - Hopeful Community" class="hero-bg-img position-absolute w-100 h-100 top-0 start-0" style="object-fit:cover;z-index:0;opacity:0.55;" />
+    <div class="container position-relative z-2">
+      <h1 class="display-4 fw-bold mb-3">Bringing Hope, Changing Lives</h1>
+      <p class="lead mb-4">Together, we light the way for those in need.</p>
+      <a href="#join" class="btn btn-warning btn-lg">Join Us</a>
+    </div>
+  </section>
 
   <!-- PARTNER STRAP START -->
   <section class="partner-strap-section">
-    <div class="partner-strap">
-      <div class="partner-strap-track">
-        <img src="assets/images/logos/federal_university_of_health_sciences.jpeg" alt="Federal University of Health Sciences, Azare" />
-        <img src="assets/images/logos/federal_allied.jpeg" alt="Federal University of Allied Health Sciences Enugu" />
-        <img src="assets/images/logos/ministry_of_health.jpeg" alt="Federal Ministry of Health and Social Welfare" />
-        <img src="assets/images/logos/society_for_family_health.jpeg" alt="Society for Family Health Nigeria" />
-        <img src="assets/images/logos/mabeloboh_center.jpeg" alt="Mabeloboh Center For Save Our Stars" />
-        <img src="assets/images/logos/nigeria_center_for_disease_control.jpeg" alt="Nigeria Centre for Disease Control" />
-        <img src="assets/images/logos/trauma_care.jpeg" alt="Trauma Care International Foundation" />
-        <img src="assets/images/logos/jigawa_school_of_midwifery.jpg" alt="Jigawa State School of Midwifery" />
-        <img src="assets/images/logos/pharmarcy_council.jpeg" alt="Pharmacy Council of Nigeria" />
-        <img src="assets/images/logos/Vicar_Hope_Foundation_Logo.jpg" alt="Vicar Hope Foundation" />
-        <img src="assets/images/logos/federal_medical_centre_bida.png" alt="Federal Medical Centre, Bida" />
-        <img src="assets/images/logos/health_emergency_initiative.png" alt="Health Emergency Initiative" />
-        <img src="assets/images/logos/institute_of_human_virology.jpeg" alt="Institute of Human Virology Nigeria" />
-        <img src="assets/images/logos/mart_life_clic.jpeg" alt="Mart-Life Detox Clinic" />
-        <img src="assets/images/logos/AHF_Logo.jpeg" alt="AIDS Healthcare Foundation" />
-        <img src="assets/images/logos/onelife_initiative.jpeg" alt="Onelife Initiative" />
-        <!-- Duplicate for seamless loop -->
-        <img src="assets/images/logos/federal_university_of_health_sciences.jpeg" alt="Federal University of Health Sciences, Azare" />
-        <img src="assets/images/logos/federal_allied.jpeg" alt="Federal University of Allied Health Sciences Enugu" />
-        <img src="assets/images/logos/ministry_of_health.jpeg" alt="Federal Ministry of Health and Social Welfare" />
-        <img src="assets/images/logos/society_for_family_health.jpeg" alt="Society for Family Health Nigeria" />
-        <img src="assets/images/logos/mabeloboh_center.jpeg" alt="Mabeloboh Center For Save Our Stars" />
-        <img src="assets/images/logos/nigeria_center_for_disease_control.jpeg" alt="Nigeria Centre for Disease Control" />
-        <img src="assets/images/logos/trauma_care.jpeg" alt="Trauma Care International Foundation" />
-        <img src="assets/images/logos/jigawa_school_of_midwifery.jpg" alt="Jigawa State School of Midwifery" />
-        <img src="assets/images/logos/pharmarcy_council.jpeg" alt="Pharmacy Council of Nigeria" />
-        <img src="assets/images/logos/Vicar_Hope_Foundation_Logo.jpg" alt="Vicar Hope Foundation" />
-        <img src="assets/images/logos/federal_medical_centre_bida.png" alt="Federal Medical Centre, Bida" />
-        <img src="assets/images/logos/health_emergency_initiative.png" alt="Health Emergency Initiative" />
-        <img src="assets/images/logos/institute_of_human_virology.jpeg" alt="Institute of Human Virology Nigeria" />
-        <img src="assets/images/logos/mart_life_clic.jpeg" alt="Mart-Life Detox Clinic" />
-        <img src="assets/images/logos/AHF_Logo.jpeg" alt="AIDS Healthcare Foundation" />
-        <img src="assets/images/logos/onelife_initiative.jpeg" alt="Onelife Initiative" />
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <span class="fw-bold text-primary fs-5 me-3">Our Collaborations:</span>
+        </div>
+        <div class="col p-0">
+          <div class="partner-strap">
+            <div class="partner-strap-track">
+              <img src="assets/images/logos/federal_university_of_health_sciences.jpeg" alt="Federal University of Health Sciences, Azare" />
+              <img src="assets/images/logos/federal_allied.jpeg" alt="Federal University of Allied Health Sciences Enugu" />
+              <img src="assets/images/logos/ministry_of_health.jpeg" alt="Federal Ministry of Health and Social Welfare" />
+              <img src="assets/images/logos/society_for_family_health.jpeg" alt="Society for Family Health Nigeria" />
+              <img src="assets/images/logos/mabeloboh_center.jpeg" alt="Mabeloboh Center For Save Our Stars" />
+              <img src="assets/images/logos/nigeria_center_for_disease_control.jpeg" alt="Nigeria Centre for Disease Control" />
+              <img src="assets/images/logos/trauma_care.jpeg" alt="Trauma Care International Foundation" />
+              <img src="assets/images/logos/jigawa_school_of_midwifery.jpg" alt="Jigawa State School of Midwifery" />
+              <img src="assets/images/logos/pharmarcy_council.jpeg" alt="Pharmacy Council of Nigeria" />
+              <img src="assets/images/logos/Vicar_Hope_Foundation_Logo.jpg" alt="Vicar Hope Foundation" />
+              <img src="assets/images/logos/federal_medical_centre_bida.png" alt="Federal Medical Centre, Bida" />
+              <img src="assets/images/logos/health_emergency_initiative.png" alt="Health Emergency Initiative" />
+              <img src="assets/images/logos/institute_of_human_virology.jpeg" alt="Institute of Human Virology Nigeria" />
+              <img src="assets/images/logos/mart_life_clic.jpeg" alt="Mart-Life Detox Clinic" />
+              <img src="assets/images/logos/AHF_Logo.jpeg" alt="AIDS Healthcare Foundation" />
+              <img src="assets/images/logos/onelife_initiative.jpeg" alt="Onelife Initiative" />
+              <!-- Duplicate for seamless loop -->
+              <img src="assets/images/logos/federal_university_of_health_sciences.jpeg" alt="Federal University of Health Sciences, Azare" />
+              <img src="assets/images/logos/federal_allied.jpeg" alt="Federal University of Allied Health Sciences Enugu" />
+              <img src="assets/images/logos/ministry_of_health.jpeg" alt="Federal Ministry of Health and Social Welfare" />
+              <img src="assets/images/logos/society_for_family_health.jpeg" alt="Society for Family Health Nigeria" />
+              <img src="assets/images/logos/mabeloboh_center.jpeg" alt="Mabeloboh Center For Save Our Stars" />
+              <img src="assets/images/logos/nigeria_center_for_disease_control.jpeg" alt="Nigeria Centre for Disease Control" />
+              <img src="assets/images/logos/trauma_care.jpeg" alt="Trauma Care International Foundation" />
+              <img src="assets/images/logos/jigawa_school_of_midwifery.jpg" alt="Jigawa State School of Midwifery" />
+              <img src="assets/images/logos/pharmarcy_council.jpeg" alt="Pharmacy Council of Nigeria" />
+              <img src="assets/images/logos/Vicar_Hope_Foundation_Logo.jpg" alt="Vicar Hope Foundation" />
+              <img src="assets/images/logos/federal_medical_centre_bida.png" alt="Federal Medical Centre, Bida" />
+              <img src="assets/images/logos/health_emergency_initiative.png" alt="Health Emergency Initiative" />
+              <img src="assets/images/logos/institute_of_human_virology.jpeg" alt="Institute of Human Virology Nigeria" />
+              <img src="assets/images/logos/mart_life_clic.jpeg" alt="Mart-Life Detox Clinic" />
+              <img src="assets/images/logos/AHF_Logo.jpeg" alt="AIDS Healthcare Foundation" />
+              <img src="assets/images/logos/onelife_initiative.jpeg" alt="Onelife Initiative" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- PARTNER STRAP END -->
 
-  <main>
-    <section id="about" class="fade-in">
-      <h2>About Us</h2>
-      <p>
-        MedHope Foundation is dedicated to providing medical aid, hope, and support to underserved communities. Our mission is to ensure everyone has access to quality healthcare and a brighter future.
-      </p>
-      <img src="assets/images/about.jpeg" alt="Helping hands" />
-    </section>
-
-    <section id="services" class="fade-in">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Medical Outreach Programs</li>
-        <li>Health Education</li>
-        <li>Emergency Relief</li>
-        <li>Community Support</li>
-      </ul>
-    </section>
-
-    <section id="torch" class="fade-in torch-section">
-      <h2>Our Torch</h2>
-      <p>
-        The torch symbolizes our unwavering commitment to bring light and hope to those in darkness. We carry this torch with compassion, integrity, and dedication.
-      </p>
-      <img src="assets/images/torch.jpeg" alt="Torch symbol" />
-    </section>
-
-    <section id="programs" class="fade-in">
-      <h2>Programs</h2>
-      <div class="programs-list">
-        <article>
-          <h3>Mobile Clinics</h3>
-          <p>Bringing healthcare directly to remote communities.</p>
-        </article>
-        <article>
-          <h3>Scholarships</h3>
-          <p>Supporting future healthcare professionals.</p>
-        </article>
-        <article>
-          <h3>Nutrition Drives</h3>
-          <p>Providing food and nutrition to families in need.</p>
-        </article>
+  <!-- About Us Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/images/about.jpeg" alt="Helping hands" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>MedHope Foundation is dedicated to providing medical aid, hope, and support to underserved communities. Our mission is to ensure everyone has access to quality healthcare and a brighter future.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="testimonials" class="fade-in">
-      <h2>Testimonials</h2>
-      <blockquote>
-        "MedHope Foundation saved my child's life. Their kindness and support gave us hope when we had none." 
-        <cite>- A grateful parent</cite>
+  <!-- Services/Program Directory -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Medical Outreach Programs</h5>
+              <p class="card-text">Bringing healthcare directly to remote communities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Health Education</h5>
+              <p class="card-text">Empowering people with knowledge for healthier lives.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Emergency Relief</h5>
+              <p class="card-text">Providing rapid response and support in crises.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Nutrition Drives</h5>
+              <p class="card-text">Providing food and nutrition to families in need.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Maternal & Child Health</h5>
+              <p class="card-text">Supporting mothers and children for a healthier future.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Community Support</h5>
+              <p class="card-text">Building resilient communities through outreach and care.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Torch Section -->
+  <section id="torch" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/images/torch.jpeg" alt="Torch symbol" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h2>Our Torch</h2>
+          <p>The torch symbolizes our unwavering commitment to bring light and hope to those in darkness. We carry this torch with compassion, integrity, and dedication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Programs</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Mobile Clinics</h5>
+              <p class="card-text">Bringing healthcare directly to remote communities.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Scholarships</h5>
+              <p class="card-text">Supporting future healthcare professionals.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Nutrition Drives</h5>
+              <p class="card-text">Providing food and nutrition to families in need.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Testimonials</h2>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">"MedHope Foundation saved my child's life. Their kindness and support gave us hope when we had none."</p>
+        <footer class="blockquote-footer">A grateful parent</footer>
       </blockquote>
-      <blockquote>
-        "Thanks to MedHope, I can now pursue my dream of becoming a nurse." 
-        <cite>- Scholarship Recipient</cite>
+      <blockquote class="blockquote text-center mt-4">
+        <p class="mb-0">"Thanks to MedHope, I can now pursue my dream of becoming a nurse."</p>
+        <footer class="blockquote-footer">Scholarship Recipient</footer>
       </blockquote>
-    </section>
+    </div>
+  </section>
 
-    <section id="join" class="fade-in join-section">
-      <h2>Join Us</h2>
-      <p>Become a volunteer or supporter and help us make a difference!</p>
-      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
-    </section>
+  <!-- Join Us / Apply Now Section -->
+  <section id="join" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Join Us</h2>
+      <p class="text-center mb-4">Become a volunteer or supporter and help us make a difference!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contactForm" class="card p-4 shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="fade-in contact-section">
-      <h2>Contact</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="col-md-8">
+          <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </div>
       </form>
-      <div id="formMessage"></div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 MedHope Foundation. All rights reserved.</p>
-    <button id="themeToggleBottom" class="theme-toggle" aria-label="Toggle theme">
-      <span id="themeIconBottom">🌙</span>
-    </button>
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 mt-5">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 MedHope Foundation. All rights reserved.</p>
+      <button id="themeToggleBottom" class="btn btn-outline-light mt-3" aria-label="Toggle theme">
+        <span id="themeIconBottom">🌙</span>
+      </button>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS Bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

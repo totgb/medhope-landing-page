@@ -9,6 +9,52 @@ body {
   color: #222;
 }
 
+/* Bootstrap overrides and custom styles */
+.hero-section {
+  background: linear-gradient(120deg, #3a8dde 60%, #6ed7b5 100%);
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  pointer-events: none;
+  user-select: none;
+  object-fit: cover;
+  object-position: center 30%; /* Move image down a bit */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(58, 141, 222, 0.3);
+  z-index: 1;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px #0001;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+footer .bi {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+footer .bi:hover {
+  color: #ffe082;
+}
+
 header {
   background: linear-gradient(120deg, #3a8dde 60%, #6ed7b5 100%);
   color: #fff;
@@ -288,8 +334,8 @@ body {
 
 /* Dark theme */
 body.dark-theme {
-  background: #181c23;
-  color: #e3e3e3;
+  background: #181a1b;
+  color: #e0e0e0;
 }
 body.dark-theme header,
 body.dark-theme footer {
@@ -333,6 +379,41 @@ body.dark-theme .hero h1 {
 }
 body.dark-theme .hero p {
     color: #fff;
+}
+body.dark-theme .bg-light {
+  background: #23272b !important;
+  color: #e0e0e0;
+}
+body.dark-theme .bg-white {
+  background: #23272b !important;
+  color: #e0e0e0;
+}
+body.dark-theme .card {
+  background: #23272b;
+  color: #e0e0e0;
+}
+body.dark-theme .navbar, body.dark-theme footer {
+  background: #111827 !important;
+}
+body.dark-theme .btn-primary, body.dark-theme .btn-success, body.dark-theme .btn-warning {
+  color: #fff;
+}
+body.dark-theme .form-control {
+  background: #23272b;
+  color: #e0e0e0;
+  border-color: #444;
+}
+body.dark-theme .form-control:focus {
+  background: #23272b;
+  color: #fff;
+}
+body.dark-theme .btn-outline-light {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+}
+body.dark-theme .btn-outline-light:hover {
+  background: #e0e0e0;
+  color: #23272b;
 }
 
 .partner-strap-section {
@@ -396,4 +477,10 @@ body.dark-theme .hero p {
   100% {
     transform: translateX(-50%);
   }
+}
+
+body.dark-theme textarea::placeholder,
+body.dark-theme input::placeholder {
+  color: #fff !important;
+  opacity: 1;
 }

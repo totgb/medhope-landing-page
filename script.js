@@ -25,14 +25,50 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   }
-});
 
+  // Smooth scroll for nav links
+  document.querySelectorAll('a.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      if (this.hash) {
+        e.preventDefault();
+        const target = document.querySelector(this.hash);
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+
+  // Form submission alert for Join Us section
+  const joinForm = document.getElementById('contactForm');
+  if (joinForm) {
+    joinForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! We will get back to you soon.');
+      joinForm.reset();
+    });
+  }
+
+  // Scrollspy highlight (Bootstrap handles this, but ensure nav-link active class)
+  const mainNavbar = document.getElementById('mainNavbar');
+  if (mainNavbar) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#mainNavbar',
+      offset: 80
+    });
+  }
+});
 
 // Theme toggle logic
 function setTheme(isDark) {
   document.body.classList.toggle('dark-theme', isDark);
-  document.getElementById('themeIconTop').textContent = isDark ? '☀️' : '🌙';
-  document.getElementById('themeIconBottom').textContent = isDark ? '☀️' : '🌙';
+  const topIcon = document.getElementById('themeIconTop');
+  const bottomIcon = document.getElementById('themeIconBottom');
+  if (topIcon) topIcon.textContent = isDark ? '☀️' : '🌙';
+  if (bottomIcon) bottomIcon.textContent = isDark ? '☀️' : '🌙';
   localStorage.setItem('medhope-theme', isDark ? 'dark' : 'light');
 }
 
@@ -41,15 +77,14 @@ function toggleTheme() {
   setTheme(isDark);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  // ...existing code...
+// Restore theme on load
+const savedTheme = localStorage.getItem('medhope-theme');
+if (savedTheme === 'dark') setTheme(true);
 
-  // Theme toggle event listeners
-  document.getElementById('themeToggleTop').addEventListener('click', toggleTheme);
-  document.getElementById('themeToggleBottom').addEventListener('click', toggleTheme);
-
-  // Load theme from localStorage
-  const savedTheme = localStorage.getItem('medhope-theme');
-  if (savedTheme === 'dark') setTheme(true);
-  else setTheme(false);
+// Top and bottom theme toggle buttons
+window.addEventListener('DOMContentLoaded', () => {
+  const themeToggleTop = document.getElementById('themeToggleTop');
+  const themeToggleBottom = document.getElementById('themeToggleBottom');
+  if (themeToggleTop) themeToggleTop.addEventListener('click', toggleTheme);
+  if (themeToggleBottom) themeToggleBottom.addEventListener('click', toggleTheme);
 });
